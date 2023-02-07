@@ -161,7 +161,7 @@ definitions:
       username:
         type: string
     type: object
-host: localhost:8080
+host: shoppingcart.up.railway.app
 info:
   contact:
     email: bbmddt@gmail.com

@@ -18,14 +18,14 @@ func AuthAdminMiddleware(secretKey string) gin.HandlerFunc {
 				return
 			}
 
-			c.JSON(http.StatusForbidden, gin.H{"error": "你冇有權限訪問!"})
+			c.JSON(http.StatusForbidden, gin.H{"error": "你沒有權限訪問!"})
 			c.Abort()
 			return
 		} else {
-			c.JSON(http.StatusUnauthorized, gin.H{"error": "你冇有授權!"})
+			c.JSON(http.StatusUnauthorized, gin.H{"error": "你沒有授權!"})
 		}
 		c.Abort()
-		return
+
 	}
 }
 
@@ -40,13 +40,13 @@ func AuthUserMiddleware(secretKey string) gin.HandlerFunc {
 				c.Abort()
 				return
 			}
-			c.JSON(http.StatusForbidden, gin.H{"error": "你冇有權限訪問!"})
+			c.JSON(http.StatusForbidden, gin.H{"error": "你沒有權限訪問!"})
 			c.Abort()
 			return
 		} else {
-			c.JSON(http.StatusUnauthorized, gin.H{"error": "你冇授權!"})
+			c.JSON(http.StatusUnauthorized, gin.H{"error": "你沒授權!"})
 		}
 		c.Abort()
-		return
+
 	}
 }

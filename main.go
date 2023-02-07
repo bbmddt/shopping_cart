@@ -20,7 +20,7 @@ import (
 //	@version		1.0
 //	@contact.name	KH Liu
 //	@contact.email	bbmddt@gmail.com
-//	@host	localhost:8080
+//	@host	shoppingcart.up.railway.app
 //  @securityDefinitions.apikey ApiKeyAuth
 //  @in header
 //  @name Authorization

@@ -1,10 +1,10 @@
 Env: "dev"
 
 DatabaseSettings:
-  DatabaseURI: "root:@tcp(127.0.0.1:3306)/go_database?parseTime=True&loc=Local"
-  DatabaseName: "go_database"
+  DatabaseURI: "root:eHtSbaMfKMhrrCBjzjE5@tcp(containers-us-west-151.railway.app:7839)/railway?parseTime=True&loc=Local"
+  DatabaseName: "railway"
   Username: "root"
-  Password: ""
+  Password: "eHtSbaMfKMhrrCBjzjE5"
 
 
 JwtSettings:
