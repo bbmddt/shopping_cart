@@ -7,7 +7,7 @@ import (
 	"mime/multipart"
 )
 
-// 從給定的FileHeader讀信息，返回二維數組
+// 從給定的FileHeader讀訊息，返回二維數組
 func ReadCsv(fileHeader *multipart.FileHeader) ([][]string, error) {
 	f, err := fileHeader.Open()
 	if err != nil {

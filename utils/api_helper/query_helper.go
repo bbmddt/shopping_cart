@@ -8,7 +8,7 @@ import (
 
 var userIdText = "userId"
 
-// 從context獲得用戶id
+// 從context獲得Userid
 func GetUserId(g *gin.Context) uint {
 	return uint(pagination.ParseInt(g.GetString(userIdText), -1))
 }

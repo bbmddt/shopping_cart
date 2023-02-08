@@ -29,7 +29,7 @@ func AuthAdminMiddleware(secretKey string) gin.HandlerFunc {
 	}
 }
 
-// 用戶授權
+// 使用者授權
 func AuthUserMiddleware(secretKey string) gin.HandlerFunc {
 	return func(c *gin.Context) {
 		if c.GetHeader("Authorization") != "" {
